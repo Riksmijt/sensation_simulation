@@ -4,9 +4,9 @@ robject::robject()
 {
 
 }
-int robject::add() 
+void robject::add() 
 {
-	return 0;
+	
 }
 robject::robject() 
 {
