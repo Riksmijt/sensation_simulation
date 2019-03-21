@@ -181,6 +181,7 @@ GLuint Sprite::loadTGA(const std::string& imagepath)
 			break;
 	}
 
+
 	// OpenGL has now copied the data. Free our own version
 	delete [] data;
 

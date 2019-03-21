@@ -74,6 +74,14 @@ int Renderer::init()
 	return 0;
 }
 
+void Renderer::renderRobject(Robject* r)
+{
+	Sprite* spr = r->s;
+	if (spr != nullptr)
+	{
+		this->renderSprite(spr, r->position.x, r->position.y, 1.0f, 1.0f, 0.0f);
+	}
+}
 void Renderer::renderSprite(Sprite* sprite, float px, float py, float sx, float sy, float rot)
 {
 	glm::mat4 viewMatrix  = getViewMatrix(); // get from Camera (Camera position and direction)

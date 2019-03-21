@@ -9,6 +9,7 @@
 #include <glm/gtx/euler_angles.hpp>
 
 #include <sensation_simulation/sprite.h>
+#include <sensation_simulation/robject.h>
 
 class Renderer
 {
@@ -17,6 +18,7 @@ class Renderer
 		virtual ~Renderer();
 
 		void renderSprite(Sprite* sprite, float px, float py, float sx, float sy, float rot);
+		void renderRobject(Robject* r);
 		GLFWwindow* window() { return _window; };
 
 		unsigned int width() { return _window_width; };
